@@ -7,18 +7,14 @@
 .
 ├── 2019
 │   ├── avignon.csv
-│   ├── beaune.csv
 │   ├── erquy.csv
 │   ├── orleans.csv
 │   ├── re_ouest.csv
 │   ├── serre_poncon.csv
 ├── 2020
 │   ├── avignon.csv
-│   ├── beaune.csv
 │   ├── erquy.csv
-│   ├── orleans.csv
 │   ├── re_ouest.csv
-│   ├── serre_poncon.csv
 ├── quantiles.R
 └── README.md
 ```
