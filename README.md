@@ -1,4 +1,4 @@
-# An R script to automatically calculate phenological quantiles of Pine Processionary Moth flights from Captrap automated monitorings
+# An R script to batch calculate phenological quantiles from Captrap automated traps csv files
 
 ## How to use
 1. Place `quantiles.R` in a Captrap folder structured with subfolders containing the data (in csv format) of each year downloaded from the Captrap web interface, like this:
@@ -29,11 +29,11 @@
 source("/path/to/quantiles.R")
 ```
 
-You will be prompted to enter the year you want to process, *i.e.*, the subfolder for which the quantiles must be calculated. With the example file structure above, valid answers would be "2019" and "2020" without the quotes, and would all generate their own output file containing quantile data. The answer to that prompt can also be left empty, in which case all year subfolders will be processed at once, and quantile data will be summarized in a single output file.
+You will be prompted to enter the year you want to process, *i.e.*, the subfolder for which the quantiles must be calculated. With the example file structure above, valid answers would be "2019" and "2020" without the quotes, and would all generate their own output file containing quantile data inside a `Quantiles/` subfolder. The answer to that prompt can also be left empty, in which case all year subfolders found will be processed at once, and quantile data will be summarized in a single output file.
 
-Alternatively, to skip the interactive prompt completely, you can run `Rscript /path/to/quantiles.R` directly in your shell (`cmd.exe`, `Bash`, `Fish`, *etc.*), in which case all years will be processed without waiting for an answer.
+Alternatively, to skip the interactive prompt completely, you can run `Rscript /path/to/quantiles.R` directly in your shell (`cmd.exe`, `Bash`, `Fish`, *etc.*) without entering R, in which case all years will be processed without waiting for user input.
 
-The below example shows an example output file for 2019:
+Below is an example of the first 15 lines of an output file for year 2019 (except it is displayed here as tab-separated instead of comma-separated):
 
 ```csv
 Year Site    Trapping_start Trapping_end Moth_count Quantile yday
