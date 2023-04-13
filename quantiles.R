@@ -30,13 +30,13 @@ quiet(library(lubridate))
 # Create the output folder
 dir.create(file.path("Quantiles"), showWarnings = FALSE)
 
-# Delete pre-existing output file, if any
-    filename <- paste0("Quantiles/quantiles_yday_",
-                       ifelse(subfolder == "", "all", subfolder),
-                       ".csv")
-    if (file.exists(filename)) {
-        file.remove(filename)
-    }
+# Delete pre-existing output file, if any, to avoid row duplications
+filename <- paste0("Quantiles/quantiles_yday_",
+                    ifelse(subfolder == "", "all", subfolder),
+                   ".csv")
+if (file.exists(filename)) {
+    file.remove(filename)
+}
 
 # Process the raw files
 for (i in subfolders) {
