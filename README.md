@@ -54,6 +54,6 @@ Year Site    Trapping_start Trapping_end Moth_count Quantile yday
 [![asciicast](https://asciinema.org/a/37MJZHX1s4li8OIIJcA1uLnqj.svg)](https://asciinema.org/a/37MJZHX1s4li8OIIJcA1uLnqj)
 
 ### Clarification on 0 or missing values in Captrap raw data
-- If a row is missing (no row for the date), then the trap did not send data that day, which does not inform on whether some captures occurred. This a true "NA".
+- If a row is missing (no row for the date), then the trap did not send data that day, which does not inform on whether some captures occurred. This is a true "NA".
 - If a row with a date exists but there is no count data in the second column, then the trap successfully communicated that day (battery or GPS coordinates for example), but no catch was detected. This is a true "0".
 - If a row with a date exists and count data is "0", then some activity was detected in the sensor but it was not attributed to the target species by the algorithm. This is a true "0", unless the trap is not properly parametrized.
