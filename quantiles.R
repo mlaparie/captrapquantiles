@@ -30,6 +30,14 @@ quiet(library(lubridate))
 # Create the output folder
 dir.create(file.path("Quantiles"), showWarnings = FALSE)
 
+# Delete pre-existing output file, if any
+    filename <- paste0("Quantiles/quantiles_yday_",
+                       ifelse(subfolder == "", "all", subfolder),
+                       ".csv")
+    if (file.exists(filename)) {
+        file.remove(filename)
+    }
+
 # Process the raw files
 for (i in subfolders) {
     tmp <- list.files(path = i,
@@ -93,9 +101,7 @@ for (i in subfolders) {
     
 # Export quantiles tables
     fwrite(q,
-           file = paste0("Quantiles/quantiles_yday_",
-                         ifelse(subfolder == "", "all", subfolder),
-                             ".csv"),
+           file = filename,
            row.names = FALSE,
            append = TRUE)
 
