@@ -1,24 +1,20 @@
 # An R script to batch calculate phenological quantiles from Captrap automated traps csv files
 
 ## How to use
-1. Place `quantiles.R` in a Captrap folder structured with subfolders containing the data (in csv format) of each year downloaded from the Captrap web interface, like this:
+1. Place `quantiles.R` in a directory structured in year subfolders, each containing csv files downloaded from the Captrap web interface, like this:
 
 ```
 .
 ├── 2019
 │   ├── avignon.csv
-│   ├── beaune.csv
 │   ├── erquy.csv
 │   ├── orleans.csv
 │   ├── re_ouest.csv
 │   ├── serre_poncon.csv
 ├── 2020
 │   ├── avignon.csv
-│   ├── beaune.csv
 │   ├── erquy.csv
-│   ├── orleans.csv
 │   ├── re_ouest.csv
-│   ├── serre_poncon.csv
 ├── quantiles.R
 └── README.md
 ```
