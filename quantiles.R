@@ -22,7 +22,12 @@ if (subfolder == "") {
 
 # Libraries
 quiet <- suppressPackageStartupMessages
-quiet(library(tidyverse))
+# quiet(library(tidyverse))
+quiet(library(magrittr))
+quiet(library(dplyr))
+quiet(library(purrr))
+quiet(library(tidyr))
+quiet(library(tibble))
 quiet(library(data.table))
 quiet(library(lubridate))
 

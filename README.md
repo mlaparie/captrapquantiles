@@ -33,20 +33,20 @@ Below is an example of the first 15 lines of an output file for year 2019 (excep
 
 ```csv
 Year Site    Trapping_start Trapping_end Moth_count Quantile yday
-2019 avignon            199          287         51 Q1       199  
+2019 avignon            199          287         51 Q1       199
 2019 avignon            199          287         51 Q5       211.5
-2019 avignon            199          287         51 Q10      218  
-2019 avignon            199          287         51 Q25      220  
-2019 avignon            199          287         51 Q50      223  
-2019 avignon            199          287         51 Q75      229  
-2019 avignon            199          287         51 Q90      246  
-2019 avignon            199          287         51 Q95      280  
-2019 avignon            199          287         51 Q99      287  
-2019 erquy              171          323          8 Q1       200  
-2019 erquy              171          323          8 Q5       200  
-2019 erquy              171          323          8 Q10      200  
-2019 erquy              171          323          8 Q25      221  
-2019 erquy              171          323          8 Q50      233  
+2019 avignon            199          287         51 Q10      218
+2019 avignon            199          287         51 Q25      220
+2019 avignon            199          287         51 Q50      223
+2019 avignon            199          287         51 Q75      229 
+2019 avignon            199          287         51 Q90      246
+2019 avignon            199          287         51 Q95      280 
+2019 avignon            199          287         51 Q99      287 
+2019 erquy              171          323          8 Q1       200 
+2019 erquy              171          323          8 Q5       200 
+2019 erquy              171          323          8 Q10      200 
+2019 erquy              171          323          8 Q25      221 
+2019 erquy              171          323          8 Q50      233 
 2019 erquy              171          323          8 Q75      235.2
 ```
 
