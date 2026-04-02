@@ -15,7 +15,7 @@ library(fs)
 # Read the data from tique.txt
 data <- read.delim("data/tique.txt", sep = "\t", stringsAsFactors = TRUE)
 
-# Convert the date column to a Date object
+# convert the date column to a Date object
 data$date <- as.Date(data$date, format = "%d/%m/%Y")
 
 # Convert instar variables into a single factor variable
@@ -94,7 +94,7 @@ if (file.exists(filename)) {
 # Process the raw files
 for (i in subfolders) {
     for (stage in stages) {
-        tmp <- list.files(path = paste0(i, sep = ""),
+        tmp <- list.files(path = if (subfolder == "") i else paste0(stage, "/", i),
                           pattern = "*.csv$",
                           full.names = TRUE) %>% 
             set_names(nm = substr(basename(.),
